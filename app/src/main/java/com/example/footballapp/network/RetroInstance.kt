@@ -1,5 +1,6 @@
 package com.example.footballapp.network
 
+import com.example.footballapp.R
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -25,5 +26,5 @@ object RetroInstance {
             })
             .build()
     }
-    val defaultUrl = "https://apiv3.apifootball.com/badges/logo_country/44_england.png"
+    val defaultUrl = "https://1000logos.net/wp-content/uploads/2021/07/Black-Flag-Logo.png"
 }
