@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3175" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/activity_england.xml" value="0.3489583333333333" />
+        <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/activity_france.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/activity_germany.xml" value="0.3489583333333333" />
+        <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/activity_italy.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/activity_league.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/activity_main.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/activity_test.xml" value="0.3489583333333333" />
@@ -12,7 +15,9 @@
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_club.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_club_2.xml" value="0.34791666666666665" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_england.xml" value="0.3489583333333333" />
+        <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_france.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_germany.xml" value="0.3489583333333333" />
+        <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_italy.xml" value="0.3489583333333333" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_layout.xml" value="0.34791666666666665" />
         <entry key="..\:/AndroidStudio/FootballApp/app/src/main/res/layout/item_layout_2.xml" value="0.3489583333333333" />
       </map>

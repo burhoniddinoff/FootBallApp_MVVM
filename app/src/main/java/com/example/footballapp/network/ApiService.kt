@@ -35,5 +35,11 @@ interface ApiService {
         @Query("APIkey") key: String = "93f7b64060f76a0273144955d104c8f7fbf4ebc038627759bfa804f883fecee1"
     ): Response<FranceDTO>
 
+    @GET("?action=get_standings")
+    suspend fun getItaly(
+        @Query("league_id") id: String = "207",
+        @Query("APIkey") key: String = "93f7b64060f76a0273144955d104c8f7fbf4ebc038627759bfa804f883fecee1"
+    ): Response<ItalyDTO>
+
 
 }

@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.footballapp.activity.england.EnglandActivity
 import com.example.footballapp.activity.espain.LeagueActivity
+import com.example.footballapp.activity.france.FranceActivity
 import com.example.footballapp.activity.germany.GermanyActivity
+import com.example.footballapp.activity.italy.ItalyActivity
 import com.example.footballapp.databinding.ActivityTestBinding
 
 class TestActivity : AppCompatActivity() {
@@ -28,6 +30,12 @@ class TestActivity : AppCompatActivity() {
             }
             germany.setOnClickListener {
                 startActivity(Intent(this@TestActivity, GermanyActivity::class.java))
+            }
+            france.setOnClickListener {
+                startActivity(Intent(this@TestActivity, FranceActivity::class.java))
+            }
+            italia.setOnClickListener {
+                startActivity(Intent(this@TestActivity, ItalyActivity::class.java))
             }
         }
     }

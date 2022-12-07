@@ -11,15 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="#4D7D93"
+        app:cardBackgroundColor="#252020"
         app:cardCornerRadius="10dp"
         app:cardElevation="12dp">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/england2" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -48,15 +48,15 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="#4D7D93"
+        app:cardBackgroundColor="#252020"
         app:cardCornerRadius="10dp"
         app:cardElevation="12dp">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/espain2" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -85,15 +85,15 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="#4D7D93"
+        app:cardBackgroundColor="#252020"
         app:cardCornerRadius="10dp"
         app:cardElevation="12dp">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/germany2" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -122,15 +122,15 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="#4D7D93"
+        app:cardBackgroundColor="#252020"
         app:cardCornerRadius="10dp"
         app:cardElevation="12dp">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/france2" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -159,15 +159,15 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="20dp"
-        app:cardBackgroundColor="#4D7D93"
+        app:cardBackgroundColor="#252020"
         app:cardCornerRadius="10dp"
         app:cardElevation="12dp">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/italia2" />
 
         <TextView
             android:layout_width="wrap_content"
