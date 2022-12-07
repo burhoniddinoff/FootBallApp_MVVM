@@ -1,4 +1,4 @@
-package com.example.footballapp.activity.league
+package com.example.footballapp.activity.espain
 
 import android.os.Bundle
 import android.util.Log

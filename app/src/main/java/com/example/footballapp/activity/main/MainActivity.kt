@@ -7,8 +7,7 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.footballapp.R
-import com.example.footballapp.activity.league.LeagueActivity
+import com.example.footballapp.activity.espain.LeagueActivity
 import com.example.footballapp.adapter.LeagueAdapter
 import com.example.footballapp.databinding.ActivityMainBinding
 import com.example.footballapp.network.RetroInstance

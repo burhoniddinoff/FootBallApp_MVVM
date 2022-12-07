@@ -1,21 +1,27 @@
-package com.example.footballapp.activity.england
+package com.example.footballapp.activity.germany
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.footballapp.R
+import com.example.footballapp.activity.england.EnglandState
+import com.example.footballapp.activity.england.EnglandViewModel
+import com.example.footballapp.activity.england.EnglandViewModelFactory
 import com.example.footballapp.adapter.EnglandAdapter
+import com.example.footballapp.adapter.GermanyAdapter
 import com.example.footballapp.databinding.ActivityEnglandBinding
+import com.example.footballapp.databinding.ActivityGermanyBinding
 import com.example.footballapp.network.RetroInstance
 import com.example.footballapp.repository.FootballRepository
 
-class EnglandActivity : AppCompatActivity() {
+class GermanyActivity : AppCompatActivity() {
 
-    private val binding by lazy { ActivityEnglandBinding.inflate(layoutInflater) }
-    private val clubAdapter by lazy { EnglandAdapter() }
+    private val binding by lazy { ActivityGermanyBinding.inflate(layoutInflater) }
+    private val clubAdapter by lazy { GermanyAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,17 +35,17 @@ class EnglandActivity : AppCompatActivity() {
     private fun setUpViewModel() {
         val repository = FootballRepository(RetroInstance.retroInstance())
         val viewModel =
-            ViewModelProvider(this, EnglandViewModelFactory(repository))[EnglandViewModel::class.java]
-        viewModel.getClubById("152")
+            ViewModelProvider(this, GermanyViewModelFactory(repository))[GermanyViewModel::class.java]
+        viewModel.getClubById("175")
         viewModel.state.observe(this) {
             when (it) {
-                EnglandState.Loading -> {
+                GermanyState.Loading -> {
                     binding.progress.isVisible = true
                 }
-                is EnglandState.Error -> {
+                is GermanyState.Error -> {
                     Toast.makeText(this, it.error, Toast.LENGTH_SHORT).show()
                 }
-                is EnglandState.Success -> {
+                is GermanyState.Success -> {
                     clubAdapter.submitList(it.list)
                     binding.progress.isVisible = false
                     Log.d("@@@England", "setupViewModel: ${it.list}")
@@ -52,7 +58,7 @@ class EnglandActivity : AppCompatActivity() {
     private fun setUpRv() {
         binding.recyclerView.apply {
             adapter = clubAdapter
-            layoutManager = LinearLayoutManager(this@EnglandActivity)
+            layoutManager = LinearLayoutManager(this@GermanyActivity)
         }
     }
 
