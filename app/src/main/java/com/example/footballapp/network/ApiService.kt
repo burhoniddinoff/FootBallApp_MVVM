@@ -1,6 +1,7 @@
 package com.example.footballapp.network
 
 import com.example.footballapp.model.ClubsDTO
+import com.example.footballapp.model.EnglandDTO
 import com.example.footballapp.model.FootballDTO
 import retrofit2.Response
 import retrofit2.http.GET
@@ -11,9 +12,16 @@ interface ApiService {
     suspend fun getAllLeagues(
         @Query("APIkey") key: String = "93f7b64060f76a0273144955d104c8f7fbf4ebc038627759bfa804f883fecee1"
     ): Response<FootballDTO>
+
     @GET("?action=get_standings")
     suspend fun getClubs(
         @Query("league_id") id: String = "302",
         @Query("APIkey") key: String = "93f7b64060f76a0273144955d104c8f7fbf4ebc038627759bfa804f883fecee1"
     ): Response<ClubsDTO>
+
+    @GET("?action=get_standings")
+    suspend fun getEngland(
+        @Query("league_id") id: String = "152",
+        @Query("APIkey") key: String = "93f7b64060f76a0273144955d104c8f7fbf4ebc038627759bfa804f883fecee1"
+    ): Response<EnglandDTO>
 }
